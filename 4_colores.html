@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #blue {
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+        }
+         #red {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+        }
+         #green {
+            height: 200px;
+            width: 200px;
+            background-color: green;
+        }
+         #yellow {
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="blue">Blue</div>
+    <div id="red">Red</div>
+    <div id="green">Green</div>
+    <div id="yellow">Yellow</div>
+
+    <script>
+        let colors = ['blue', 'red', 'green', 'yellow'];
+
+        colors.forEach(function(color) {
+            let div = document.getElementById(color);
+
+            div.addEventListener('click', function() {
+                div.style.backgroundColor = 'black';
+            });
+        });
+
+    </script>
+</body>
+</html>
