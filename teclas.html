@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Colores con teclas</title>
+  <style>
+    #key {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      border: 1px solid black;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="key"></div>
+
+  <script>
+    let color = '';
+
+    document.addEventListener('keydown', function(event) {
+      const box = document.getElementById('key');
+
+      // Cambiar color del div "key"
+      if (event.key === 'a') {
+        color = 'pink';
+        box.style.backgroundColor = color;
+      } else if (event.key === 's') {
+        color = 'orange';
+        box.style.backgroundColor = color;
+      } else if (event.key === 'd') {
+        color = 'skyblue';
+        box.style.backgroundColor = color;
+      }
+
+    })
+    
+  </script>
+</body>
+</html>
