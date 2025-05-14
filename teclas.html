@@ -22,7 +22,6 @@
     document.addEventListener('keydown', function(event) {
       const box = document.getElementById('key');
 
-      // Cambiar color del div "key"
       if (event.key === 'a') {
         color = 'pink';
         box.style.backgroundColor = color;
@@ -32,6 +31,14 @@
       } else if (event.key === 'd') {
         color = 'skyblue';
         box.style.backgroundColor = color;
+      }
+
+       else if (event.key === 'q') {
+        createDiv('purple');
+      } else if (event.key === 'w') {
+        createDiv('gray');
+      } else if (event.key === 'e') {
+        createDiv('brown');
       }
 
     })
